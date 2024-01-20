@@ -1,0 +1,110 @@
+:root{
+--main:#8751fc;
+--error:#fc7c7c;
+--back:#f0f0f0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--back);
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    transform: translate(50%,30%);
+    background-color: white;
+    border-radius: 25px;
+    border-bottom-right-radius: 100px;
+    padding: 50px;
+}
+form{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    border-bottom: 1px solid #33333326;
+    padding-bottom: 40px;
+}
+form label{
+    display: block;
+    margin-bottom: 7px;
+    color: #6c6c6c;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+form input{
+    padding: 12px 10px;
+    border: 1px solid #88888870;
+    border-radius: 5px;
+    outline: none;
+    font-size: 31px;
+    width: 130px;
+}
+form input:focus{
+    border: 1px solid var(--main);
+    caret-color: #8751fc;
+}
+form .error{
+    font-size: 12px;
+    font-style: italic;
+    color: var(--error);
+    display: block;
+    margin-top: 8px;
+    opacity: 0;
+}
+form input::placeholder{
+    color:#afabab;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+form button{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--main);
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    padding: 5px;
+    height: 65px;
+}
+form button:hover{
+    background-color: black;
+}
+.txt{
+    margin-bottom: -40px;
+    margin-top: 100px;
+}
+.txt .all{
+    font-weight: bold;
+    font-size: 52px;
+    font-style: italic;
+    margin-top: -75px;
+}
+.txt .all span{
+    color: var(--main);
+    font-style: italic;
+    font-size: 70px;
+    text-align: center;
+    transform: translateY(8px);
+    display: inline-block;
+    padding-right: 2px;
+    letter-spacing: 10px;
+}
+form .act1{
+    color: #fc7c7c;
+}
+form .act2{
+    border: 1px solid #fc7c7c;
+}
+@media(max-width:990px){
+    .txt .all {
+        font-size: 40px;
+    }
+    form{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    }
+}

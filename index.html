@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>age-calculator</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="form">
+                <form>
+                    <div class="day all">
+                        <label  for="d">DAY</label>
+                        <input id="d" type="number" placeholder="DD" min="1">
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="month all">
+                        <label for="m">MONTH</label>
+                        <input id="m" type="number" placeholder="MM" min="1">
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="year all">
+                        <label for="y">YEAR</label>
+                        <input id="y" type="number" placeholder="YYYY" min="1930">
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="btn">
+                        <button><img src="images/icon-arrow.svg" alt="not found" /></button>
+                    </div>
+                </form>
+            </div>
+            <div class="txt">
+                <p class="year all"><span>--</span>years</p>
+                <p class="month all"><span>--</span>months</p>
+                <p class="day all"><span>--</span>days</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="major.js"></script>
+</body>
+
+</html>
